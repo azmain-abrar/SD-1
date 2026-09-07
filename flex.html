@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+    <style>
+        body {
+            font-family:consolas;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        .header {
+            background-color:darkslategrey;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+
+        }
+        .card {
+            background-color: #f0eded;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: rgb(0, 42, 255);
+        }
+
+        nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .price {
+        color: #0e2842;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    }
+    
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="main-title">Flex Basics</h1>
+        <nav>
+            <a href="css.html">CSS Basics</a>
+            <a href="flex.html">Flex Basics</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <img class="img" src="image/away_authentic_212ead93-85c4-4f0d-9aec-5b4405cf7251.webp" alt="Home kit">
+            <p class="price">price: €150,00</p>
+        </div>
+        <div class="card">
+            <img class="img" src="image/JZ7218_01.webp" alt="Away kit">
+            <p class="price">price: €150,00</p>
+        </div>
+        <div class="card">
+            <img class="img" src="image/KQ6946_1_APPAREL_Photography_FrontCenterView_white.jpg" alt="Third kit">
+            <p class="price">price: €150,00</p>
+        </div>
+    </main>
+</body>
+
+</html>
